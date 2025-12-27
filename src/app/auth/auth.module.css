@@ -1,0 +1,85 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #F4F5F7 0%, #E6E8F0 100%);
+    padding: 20px;
+}
+
+.authCard {
+    width: 100%;
+    max-width: 480px;
+    padding: 40px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.title {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--primary);
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: var(--text-muted);
+}
+
+.roleSelector {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 32px;
+    overflow-x: auto;
+    padding-bottom: 8px;
+}
+
+.roleBtn {
+    padding: 8px 16px;
+    border-radius: 20px;
+    background: var(--background);
+    color: var(--text-muted);
+    font-weight: 600;
+    border: 2px solid transparent;
+    transition: all 0.2s ease;
+    flex: 1;
+}
+
+.activeRole {
+    background: var(--primary);
+    color: white;
+    box-shadow: 0 4px 12px rgba(108, 93, 211, 0.3);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.submitBtn {
+    margin-top: 12px;
+    width: 100%;
+}
+
+.switchText {
+    text-align: center;
+    margin-top: 24px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+.switchBtn {
+    color: var(--primary);
+    font-weight: 700;
+    background: none;
+    padding: 0;
+    font-size: inherit;
+}
+
+.switchBtn:hover {
+    text-decoration: underline;
+}

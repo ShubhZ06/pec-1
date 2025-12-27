@@ -1,0 +1,21 @@
+.card {
+    background: var(--card-bg);
+    border-radius: var(--radius-md);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    overflow: hidden;
+    height: 100%;
+}
+
+.card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.title {
+    margin-bottom: 16px;
+    font-size: 1.25rem;
+    color: var(--text-main);
+    font-weight: 700;
+}

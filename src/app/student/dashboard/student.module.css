@@ -1,0 +1,258 @@
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.greeting {
+    font-size: 2rem;
+    font-weight: 800;
+    color: var(--text-main);
+    margin-bottom: 4px;
+}
+
+.name {
+    color: var(--primary);
+}
+
+.subtext {
+    color: var(--text-muted);
+}
+
+.streak {
+    background: #FFF0ED;
+    color: #FF754C;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: 700;
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+/* Bento Grid */
+.bentoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 240px);
+    gap: 24px;
+}
+
+.card {
+    height: 100%;
+}
+
+/* Progress Card - Spans 2 cols, 1 row */
+.progressCard {
+    grid-column: span 2;
+    background: linear-gradient(135deg, #FFFFFF 0%, #FAFAFC 100%);
+}
+
+.progressContent {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.cardTitle {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 24px;
+}
+
+.stats {
+    display: flex;
+    gap: 24px;
+    margin-bottom: 32px;
+}
+
+.statItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 16px;
+    background: var(--background);
+    border-radius: 16px;
+    font-weight: 600;
+    min-width: 100px;
+}
+
+.iconYellow {
+    color: var(--accent-yellow);
+}
+
+.iconBlue {
+    color: var(--accent-cyan);
+}
+
+.track {
+    width: 100%;
+}
+
+.trackLabel {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.progressBar {
+    height: 12px;
+    background: var(--background);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.progressFill {
+    height: 100%;
+    background: var(--primary);
+    border-radius: 6px;
+}
+
+.mascot {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Lesson Card */
+.lessonCard {
+    background: #EBF8F2;
+    /* Light Green Tint */
+}
+
+.lessonInfo {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px;
+    background: white;
+    border-radius: 16px;
+}
+
+.lessonIcon {
+    width: 48px;
+    height: 48px;
+    background: var(--accent-green);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.lessonTitle {
+    font-weight: 700;
+    color: var(--text-main);
+}
+
+.lessonSub {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+.playBtn {
+    margin-left: auto;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: var(--text-main);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Schedule Card */
+.scheduleCard {
+    grid-row: span 2;
+    /* Vertical tall card */
+}
+
+.scheduleList {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.scheduleItem {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: var(--background);
+    border-radius: 12px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+}
+
+.dotGreen {
+    background: var(--accent-green);
+}
+
+.dotPink {
+    background: var(--accent-pink);
+}
+
+.dotBlue {
+    background: var(--accent-cyan);
+}
+
+.time {
+    font-size: 0.85rem;
+    font-weight: 700;
+    color: var(--text-muted);
+    width: 60px;
+}
+
+.subject {
+    font-weight: 600;
+}
+
+/* Fun & VR Cards */
+.funCard {
+    background: var(--accent-pink);
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.funContent,
+.vrContent {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.funContent h3,
+.vrContent h3 {
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.vrCard {
+    background: var(--accent-cyan);
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+.vrIcon {
+    font-size: 2.5rem;
+    margin-top: auto;
+}
