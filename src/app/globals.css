@@ -1,23 +1,37 @@
 :root {
+  /* Core Brand Colors */
   --primary: #6C5DD3;
-  --primary-hover: #5A4CAD;
+  /* Deep Purple - Main Action */
+  --primary-light: #8B80F8;
+  /* Light Purple */
   --secondary: #FF754C;
-  --accent-green: #7FBA7A;
-  --accent-pink: #FFA2C0;
-  --accent-yellow: #FFCE73;
-  --accent-cyan: #3F8CFF;
-  
+  /* Orange - Secondary Action */
+
+  /* Pastel / Bento Theme Colors */
+  --pastel-pink: #FFA2C0;
+  --pastel-blue: #A0D7E7;
+  --pastel-purple: #CFC8FF;
+  --pastel-yellow: #FFE5A5;
+  --pastel-green: #7FBA7A;
+
+  /* Backgrounds */
   --background: #F4F5F7;
+  /* Soft Grey/White for main bg */
   --card-bg: #FFFFFF;
+
+  /* Text */
   --text-main: #1B1D21;
   --text-muted: #808191;
-  
-  --radius-sm: 12px;
-  --radius-md: 20px;
-  --radius-lg: 32px;
-  
-  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
-  --shadow-md: 0 8px 24px rgba(0, 0, 0, 0.08);
+  --text-light: #FFFFFF;
+
+  /* UI Tokens */
+  --radius-sm: 16px;
+  --radius-md: 24px;
+  --radius-lg: 40px;
+
+  --shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 40px rgba(0, 0, 0, 0.05);
+  --shadow-lg: 0 20px 60px rgba(0, 0, 0, 0.1);
 }
 
 * {

@@ -32,11 +32,12 @@ export default function Sidebar({ role = 'student' }: { role?: keyof typeof ROLE
     return (
         <aside className={styles.sidebar}>
             <div className={styles.logo}>
-                <div className={styles.logoIcon}>🎓</div>
-                <span>KidzLearn</span>
+                <div className={styles.logoIcon}>🛡️</div>
+                <span className={styles.logoText}>SurakshaSetu</span>
             </div>
 
             <nav className={styles.nav}>
+                <div className={styles.navSectionTitle}>MENU</div>
                 {links.map((link) => {
                     const Icon = link.icon;
                     const isActive = pathname === link.href;
@@ -47,20 +48,32 @@ export default function Sidebar({ role = 'student' }: { role?: keyof typeof ROLE
                             href={link.href}
                             className={`${styles.link} ${isActive ? styles.active : ''}`}
                         >
-                            <Icon size={24} />
+                            <Icon size={22} strokeWidth={isActive ? 2.5 : 2} />
                             <span className={styles.linkText}>{link.name}</span>
                         </Link>
                     );
                 })}
+
+                {/* Additional Links for demo purposes per reference */}
+                <div className={styles.navSectionTitle}>LIBRARY</div>
+                <Link href="#" className={styles.link}>
+                    <BookOpen size={22} />
+                    <span>My Saved</span>
+                </Link>
+                <Link href="#" className={styles.link}>
+                    <Settings size={22} />
+                    <span>Settings</span>
+                </Link>
             </nav>
 
-            <div className={styles.userProfile}>
-                <div className={styles.avatar}>👤</div>
-                <div className={styles.userInfo}>
-                    <p className={styles.userName}>Hello User</p>
-                    <p className={styles.userRole}>{role.charAt(0).toUpperCase() + role.slice(1)}</p>
+            <Link href="/auth" style={{ textDecoration: 'none' }}>
+                <div className={styles.userProfile}>
+                    <div className={styles.avatar}>👤</div>
+                    <div className={styles.userInfo}>
+                        <p className={styles.userName}>Log Out</p>
+                    </div>
                 </div>
-            </div>
+            </Link>
         </aside>
     );
 }

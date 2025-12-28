@@ -1,4 +1,4 @@
-import Sidebar from "@/components/layout/Sidebar";
+import Navbar from "@/components/layout/Navbar";
 
 export default function StudentLayout({
     children,
@@ -6,10 +6,12 @@ export default function StudentLayout({
     children: React.ReactNode;
 }) {
     return (
-        <div style={{ display: 'flex', minHeight: '100vh', background: 'var(--background)' }}>
-            <Sidebar role="student" />
-            <div style={{ marginLeft: '260px', flex: 1, padding: '32px' }}>
-                {children}
+        <div style={{ minHeight: '100vh', background: 'var(--background)' }}>
+            <div style={{ maxWidth: '1400px', margin: '0 auto', padding: '0 2rem' }}>
+                <Navbar />
+                <main style={{ paddingBottom: '2rem' }}>
+                    {children}
+                </main>
             </div>
         </div>
     );
